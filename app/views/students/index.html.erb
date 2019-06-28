@@ -9,6 +9,7 @@
     <tr>
       <th class="table-active">Name</th>
       <th class="table-active">Age</th>
+      <th class="table-active">Email</th>
       <th class="table-active" colspan="3"></th>
     </tr>
   </thead>
@@ -20,6 +21,7 @@
       <tr>
         <td class="table-active"><%= student.name %></td>
         <td class="table-active"><%= student.age %></td>
+            <td class="table-active"><%= student.email %></td>
         <td class="table-active"><%= link_to 'Show', student, class: 'btn btn-primary' %></td>
         <td class="table-active"><%= link_to 'Edit', edit_student_path(student), class: 'btn btn-success'%></td>
         <td class="table-active"><%= link_to 'Destroy', student, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %></td>
